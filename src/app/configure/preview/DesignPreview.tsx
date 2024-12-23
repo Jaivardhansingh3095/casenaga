@@ -15,8 +15,8 @@ import { useEffect, useState } from "react";
 import Confetti from "react-dom-confetti";
 import { createChekoutSession } from "./action";
 import { useRouter } from "next/navigation";
-///Test
 
+//this page is for preview
 function DesignPreview({ configuration }: { configuration: Configuration }) {
   const [showConfetti, setShowConfetti] = useState(false);
 
@@ -67,7 +67,8 @@ function DesignPreview({ configuration }: { configuration: Configuration }) {
         currency: "INR",
         name: "casenaga",
         description: "Custom iPhone case",
-        image: configuration.croppedImageUrl,
+        image:
+          "https://utfs.io/f/zXukaeWoVhcMipHyxa8LrWYGgXkoOKqZVvHCpQl13dMwzJFf",
         order_id: orderId,
         // eslint-disable-next-line @typescript-eslint/no-explicit-any
         handler: (response: any) => {

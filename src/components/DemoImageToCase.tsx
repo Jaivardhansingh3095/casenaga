@@ -68,6 +68,7 @@ function DemoImageToCase() {
               <img
                 src="/horse.jpg"
                 className="ring-1 ring-gray-900/10 rounded-md object-cover bg-white shadow-2xl  h-full w-full"
+                alt="horse-image"
               />
             </div>
 

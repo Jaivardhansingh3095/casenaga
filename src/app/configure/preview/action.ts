@@ -61,6 +61,7 @@ export async function createChekoutSession({ configId }: { configId: string }) {
     `${process.env.NEXT_PUBLIC_SERVER_URL}/api/razorpay/createOrder`,
     {
       method: "POST",
+      body: JSON.stringify({ amount: price }),
     }
   );
 
